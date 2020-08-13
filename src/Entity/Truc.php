@@ -2,10 +2,12 @@
 
 namespace App\Entity;
 
+use App\Doctrine\Filter;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\TrucRepository")
+ * @Filter(column="data")
  */
 class Truc
 {

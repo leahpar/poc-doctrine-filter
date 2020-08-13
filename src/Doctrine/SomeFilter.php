@@ -18,8 +18,6 @@ class SomeFilter extends SQLFilter
         }
 
         return sprintf('%s.filter = %s', $targetTableAlias, $this->getParameter('filter_value'));
-
-
     }
 
 }

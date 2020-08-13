@@ -23,3 +23,9 @@ doctrine:
                 enabled: true
                 parameters:
                     filter_value: '%filter_value%'
+
+            some_other_filter:
+                class: App\Doctrine\SomeOtherFilter
+                enabled: true
+                parameters:
+                    filter_value: '%filter_other_value%'

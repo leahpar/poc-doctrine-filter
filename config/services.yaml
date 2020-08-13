@@ -4,7 +4,8 @@
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
-    filter_value: "filter_A"
+    filter_value: 'filter_A'
+    filter_other_value: '%%42%%'
 
 services:
     # default configuration for services in *this* file

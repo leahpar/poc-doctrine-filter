@@ -44,6 +44,27 @@ parameters:
     filter_value: "filter_A"
 ```
 
+## Autre exemple de filtre, avec annotation 
+
+=> `src/Doctrine/someOtherFilter.php`
+
+Permet de choisir les filtres dynamiquement avec des annotations (ex `@Filter(column="client_id")`)
+ au lieu d'avoir le filtre en dur dans le `someFilter.php`.
+ 
+```php
+/**
+ * @ORM\Entity(repositoryClass="App\Repository\TrucRepository")
+ * @Filter(column="filter")
+ */
+class Truc
+{
+    public $id;
+    public $filter;
+    public $data;
+    // ...
+}
+```
+
 ## Exemples d'utilisation
 
 ### Récupération de toutes les données
